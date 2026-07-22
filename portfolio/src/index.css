@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Design system: "Plot Paper"
+  Subject: a data & AI analyst. The vocabulary is the axis, the tick, the
+  readout — so structure is drawn from charting instruments rather than decoration.
+  All shadcn tokens are expressed in HSL so the UI primitives inherit the theme.
+*/
+
+@layer base {
+  :root {
+    /* Core surfaces */
+    --background: 60 8% 94%;          /* #F1F1ED  paper */
+    --foreground: 220 12% 10%;        /* #16181C  ink */
+
+    --card: 50 20% 98%;               /* #FBFBF9  raised paper */
+    --card-foreground: 220 12% 10%;
+
+    --popover: 50 20% 98%;
+    --popover-foreground: 220 12% 10%;
+
+    /* Signal — deep pine. Used for actions and emphasis only. */
+    --primary: 162 42% 21%;           /* #1F4D3F */
+    --primary-foreground: 50 20% 98%;
+
+    --secondary: 55 12% 90%;
+    --secondary-foreground: 220 12% 10%;
+
+    --muted: 55 10% 91%;
+    --muted-foreground: 220 6% 39%;   /* #5C6068 graphite */
+
+    --accent: 150 20% 91%;            /* #E4EDE7 signal wash */
+    --accent-foreground: 162 42% 21%;
+
+    --destructive: 5 62% 44%;
+    --destructive-foreground: 50 20% 98%;
+
+    --border: 55 9% 84%;              /* #D9D9D2 rule */
+    --input: 55 9% 84%;
+    --ring: 162 42% 21%;
+
+    --brass: 39 56% 41%;              /* #A67C2E numerals */
+
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    /* Faint plot grid — the paper this whole site is drawn on. */
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.5) 1px, transparent 1px);
+    background-size: 88px 88px;
+  }
+
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 3px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Mono utility face — labels, data, captions */
+  .mono {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* Eyebrow label that sits on an axis rule */
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Horizontal axis with a tick at its origin */
+  .axis-rule {
+    position: relative;
+    height: 1px;
+    background: hsl(var(--border));
+  }
+  .axis-rule::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 1px;
+    height: 9px;
+    background: hsl(var(--primary));
+  }
+
+  .panel {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+  }
+
+  .link-underline {
+    background-image: linear-gradient(hsl(var(--primary)), hsl(var(--primary)));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+@layer utilities {
+  .text-brass {
+    color: hsl(var(--brass));
+  }
+  .grid-fade {
+    -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

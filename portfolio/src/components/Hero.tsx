@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowDownRight, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { EASE, maskLine, rise, stagger, useCountUp } from "@/lib/motion";
 import { metrics, profile } from "@/lib/content";
 
@@ -86,15 +86,6 @@ const Hero = () => {
                 >
                   <Mail className="h-4 w-4" />
                   Get in touch
-                </a>
-                <a
-                  href={profile.resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-sm border border-foreground/20 px-5 py-3 text-sm font-medium transition-colors hover:border-primary hover:text-primary"
-                >
-                  Read the résumé
-                  <ArrowDownRight className="h-4 w-4" />
                 </a>
               </motion.div>
 

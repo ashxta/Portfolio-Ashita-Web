@@ -44,14 +44,6 @@ const Contact = () => (
           Write to me
           <ArrowUpRight className="h-4 w-4" />
         </a>
-        <a
-          href={profile.resume}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-sm border border-foreground/20 px-6 py-3.5 text-sm font-medium transition-colors hover:border-primary hover:text-primary"
-        >
-          Download the résumé
-        </a>
       </motion.div>
 
       <dl className="mt-16 grid grid-cols-2 gap-x-6 gap-y-8 lg:grid-cols-4">

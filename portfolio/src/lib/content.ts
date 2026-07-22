@@ -111,35 +111,6 @@ export const projects: Project[] = [
     github: "https://github.com/ashxta/AI-Data-Analyzer",
     demo: "https://ai-data-insight.streamlit.app/",
   },
-  {
-    index: "04",
-    title: "TruthGuard",
-    year: "2025",
-    status: "In progress",
-    premise:
-      "A multi-modal platform that checks text, images, video and links for misinformation, and explains the manipulation it finds.",
-    outcomes: [
-      "Real-time content analysis running on Google Cloud Run with Firestore.",
-      "Every verdict comes with an explanation of the pattern used, so the tool teaches media literacy rather than just scoring content.",
-    ],
-    stack: ["Python", "React", "Node.js", "TensorFlow", "GCP"],
-    demo: "https://truthguard-controllers.vercel.app/",
-  },
-  {
-    index: "05",
-    title: "Deadlinely",
-    year: "2024",
-    status: "Shipped",
-    premise:
-      "A task manager that builds the schedule for you from priorities, deadlines and time estimates.",
-    outcomes: [
-      "Dynamic prioritisation with a five-star weighting, producing an optimised daily order rather than a flat list.",
-      "Responsive interface with local persistence, so progress survives a refresh.",
-    ],
-    stack: ["React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/ashxta/Deadlinely",
-    demo: "https://deadlinely.vercel.app/",
-  },
 ];
 
 export const education = {
@@ -159,7 +130,7 @@ export const certifications = [
 export const activities = [
   {
     label: "Hackathons",
-    body: "Health-tech MVP shortlisted at Hack4Bihar 2025. National semi-finalist, Flipkart Grid 7.0.",
+    body: "Finalist at TechM Code 2026 by Tech Mahindra.",
   },
   {
     label: "Volunteering",

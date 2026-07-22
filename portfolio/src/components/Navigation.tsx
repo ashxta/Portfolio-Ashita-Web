@@ -92,14 +92,6 @@ const Navigation = () => {
                 )}
               </button>
             ))}
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mono rounded-sm border border-foreground/15 px-3 py-1.5 text-[11px] uppercase tracking-[0.14em] transition-colors hover:border-primary hover:text-primary"
-            >
-              Résumé
-            </a>
           </div>
 
           <button
@@ -132,14 +124,6 @@ const Navigation = () => {
                   {link.label}
                 </button>
               ))}
-              <a
-                href={profile.resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mono py-3 text-left text-[11px] uppercase tracking-[0.14em] text-primary"
-              >
-                Résumé
-              </a>
             </div>
           </motion.div>
         )}

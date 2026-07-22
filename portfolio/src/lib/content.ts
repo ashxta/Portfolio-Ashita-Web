@@ -129,7 +129,7 @@ export const certifications = [
 export const activities = [
   {
     label: "Hackathons",
-    body: "Finalist at TechM Code 2026 by Tech Mahindra.",
+    body: "Finalist at TechM Code 2026 by Tech Mahindra. National semi-finalist, Flipkart Grid 7.0.",
   },
   {
     label: "Volunteering",

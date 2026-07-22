@@ -29,7 +29,7 @@ All copy — profile, metrics, skills, projects, education, certifications — l
 src/lib/content.ts
 ```
 
-Change it there and every section updates. The résumé PDF served by the download buttons is `public/Ashita_Resume.pdf`; replace that file to publish a new version.
+Change it there and every section updates.
 
 ## Deploying to Vercel
 

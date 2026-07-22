@@ -6,7 +6,6 @@ export const profile = {
   phone: "+91 8218694843",
   github: "https://github.com/ashxta",
   linkedin: "https://www.linkedin.com/in/ashita-a-602001282/",
-  resume: "/Ashita_Resume.pdf",
   positioning:
     "I build models and dashboards that answer the question a business actually asked — who is about to leave, what to commission next, where the money goes.",
   summary: [

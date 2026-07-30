@@ -47,7 +47,7 @@ const Hero = () => {
       <div className="mx-auto max-w-6xl px-6">
         <motion.div initial="hidden" animate="show" variants={stagger}>
           <motion.p variants={rise} className="eyebrow">
-            {profile.location} — open to analyst roles and internships
+            {profile.location} — open to AI engineer roles and internships
           </motion.p>
 
           <h1 className="mt-6 font-display text-[clamp(3.5rem,13vw,10rem)] font-semibold leading-[0.85] tracking-[-0.045em]">

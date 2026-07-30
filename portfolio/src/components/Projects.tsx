@@ -76,7 +76,7 @@ const Projects = () => (
     <div className="mx-auto max-w-6xl px-6">
       <SectionHeading
         eyebrow="Selected work"
-        title="Five problems, and what changed after."
+        title="The work, and what changed after."
         intro="Each of these started with a question someone needed answered. The stack is listed, but the outcome is the point."
       />
 

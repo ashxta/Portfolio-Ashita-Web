@@ -1,6 +1,6 @@
 # Ashita — Portfolio
 
-Personal portfolio for Ashita, a Data & AI Analyst. Built with React, TypeScript, Vite, Tailwind CSS and Framer Motion.
+Personal portfolio for Ashita, an AI Engineer. Built with React, TypeScript, Vite, Tailwind CSS and Framer Motion.
 
 ## Design
 

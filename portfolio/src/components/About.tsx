@@ -5,23 +5,23 @@ import { profile } from "@/lib/content";
 
 const focus = [
   {
-    label: "Predictive modelling",
+    label: "Machine learning",
     body: "Classification and clustering on business problems — attrition, risk, segmentation — with attention to imbalanced data.",
   },
   {
-    label: "Business intelligence",
-    body: "Power BI and SQL reporting built for the person reading it, not the person who wrote the query.",
+    label: "AI applications",
+    body: "Turning models into something usable: an app, a dashboard, a clear readout a non-technical person can act on.",
   },
   {
-    label: "Consulting workflows",
-    body: "SAP implementation, process analysis and digital transformation, from certification through to client-facing practice.",
+    label: "Generative AI",
+    body: "Currently learning LLMs, RAG, LangChain and agentic AI, and building small projects to make it stick.",
   },
 ];
 
 const About = () => (
   <motion.section {...inViewSection} id="about" className="scroll-mt-24 py-24 sm:py-32">
     <div className="mx-auto max-w-6xl px-6">
-      <SectionHeading eyebrow="About" title="Analysis is only finished when someone can act on it." />
+      <SectionHeading eyebrow="About" title="A model is only finished when someone can act on it." />
 
       <div className="grid gap-12 md:grid-cols-12">
         <div className="space-y-5 md:col-span-6">

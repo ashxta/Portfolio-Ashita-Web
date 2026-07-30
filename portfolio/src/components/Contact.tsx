@@ -32,8 +32,8 @@ const Contact = () => (
       </h2>
 
       <motion.p variants={rise} className="mt-8 max-w-xl text-[16px] leading-relaxed text-muted-foreground">
-        I'm looking for analyst and data science roles, internships, and consulting work. The fastest
-        way to reach me is email — I reply to everything.
+        I'm looking for AI and machine learning engineering roles, internships, and consulting work.
+        The fastest way to reach me is email — I reply to everything.
       </motion.p>
 
       <motion.div variants={rise} className="mt-10 flex flex-wrap gap-3">

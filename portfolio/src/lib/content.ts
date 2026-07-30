@@ -6,7 +6,7 @@ export const profile = {
   phone: "+91 8218694843",
   github: "https://github.com/ashxta",
   linkedin: "https://www.linkedin.com/in/ashita-a-602001282/",
-  resume: "/Ashita_Resume.pdf",
+  resume: "/Resume%20Ashita%20AI%20Engineer.pdf",
   positioning:
     "I build intelligent systems that turn data into decisions — predictive ML models on one side, and the application or dashboard someone actually uses on the other.",
   summary: [
